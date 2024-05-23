@@ -1,6 +1,7 @@
 # import modules
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 
 # set seed for reproducibility
 np.random.seed(0)
@@ -37,4 +38,13 @@ for i, sample_size in enumerate(sample_sizes):
 
 # adjust layout for better spacing
 plt.tight_layout()
+
+# create the 'plots' directory if it doesn't exist
+if not os.path.exists('plots'):
+    os.makedirs('plots')
+
+# save the figure
+plt.savefig('plots/240522_LLN_plots_2x2.png')
+
+# Show the plot
 plt.show()
