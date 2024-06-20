@@ -26,7 +26,7 @@ def calculate_stats(samples):
 def format_stats(stats):
     """Formats statistics into a string for plot legends."""
     return (
-        f"Mean: {stats[0]}\nVar: {stats[1]}\nSkew: {stats[2]}\nKurt: {stats[3]}"
+        f"Mean: {stats[0]}\nVar: {stats[1]}\nSkew: {stats[2]}\nExc. Kurt: {stats[3]}"
     )
 
 # --- PLOTTING ---
