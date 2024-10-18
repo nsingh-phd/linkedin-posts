@@ -1,9 +1,10 @@
-name: Update README with images
+name: Update README with images and scripts
 
 on:
   push:
     paths:
-      - "images/**"  # Trigger workflow when images are added or modified
+      - "plots/**"  # Trigger when images are added or updated
+      - "*.py"     # Trigger when Python scripts are added or updated
 
 jobs:
   update-readme:
@@ -29,5 +30,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add README.md
-          git commit -m "Update README with new images"
+          git commit -m "Update README with new images and scripts"
           git push
