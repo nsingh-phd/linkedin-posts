@@ -1,13 +1,13 @@
 import os
 
-# Define paths to the script and image directories
+# Define paths to the scripts and image directories
 script_folder = "."
 image_folder = "plots"
 
-# Get all script files (assuming Python scripts)
+# Get all scripts
 scripts = [f for f in os.listdir(script_folder) if f.endswith(".py")]
 
-# Get all image files (png, jpg, etc.)
+# Get all images
 images = [f for f in os.listdir(image_folder) if f.endswith((".png", ".jpg", ".jpeg", ".gif"))]
 
 # Function to remove file extensions
