@@ -1,4 +1,4 @@
-name: Update README with images and scripts
+name: Update README with images and scripts.
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip
 
       - name: Run Python script to update README
-        run: python generate_readme.py
+        run: python README-creater.py
 
       - name: Commit and push changes
         run: |
