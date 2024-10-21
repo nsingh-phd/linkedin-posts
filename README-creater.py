@@ -27,7 +27,7 @@ scripts.sort(key=get_script_date, reverse=True)
 # Open README file in write mode
 with open("README.md", "w") as readme:
     # Write the header
-    readme.write("# Script and Image Gallery\n\n")
+    readme.write("# Scripts and plots gallery\n\n")
     readme.write("This table shows the scripts (sorted by date) and their corresponding plots:\n\n")
 
     # Write table header in markdown
@@ -43,4 +43,4 @@ with open("README.md", "w") as readme:
             image_file = image_dict[script_name]
             image_path = os.path.join(image_folder, image_file)
             # Write the script name and image in markdown table format
-            readme.write(f"| `{script}` | ![{image_file}]({image_path}) |\n")
+            readme.write(f"| [{script}]({script}) | ![{image_file}]({image_path}) |\n")
