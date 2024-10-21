@@ -26,7 +26,7 @@ scripts.sort(key=get_script_date, reverse=True)
 
 # Open README file in write mode
 with open("README.md", "w") as readme:
-    # Write the header for the README
+    # Write the header
     readme.write("# Script and Image Gallery\n\n")
     readme.write("This table shows the scripts (sorted by date) and their corresponding plots:\n\n")
 
