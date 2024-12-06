@@ -21,6 +21,7 @@ for df in range(1, 31):
     plt.plot(x, normal_dist, label="Standard Normal", color='gray', linestyle='--', linewidth=2)
     plt.plot(x, t_dist, label=f"t-distribution (df={df})", color='red', linewidth=2)
     plt.title(f"t-distribution Converging to Normal (df = {df})")
+    plt.text(1.5, 0.35, "https://n.singh.phd", fontsize=10, color="gray")
     plt.xlabel('x')
     plt.ylabel('Probability Density')
     plt.ylim(0, 0.45)
