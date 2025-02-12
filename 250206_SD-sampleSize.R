@@ -2,7 +2,10 @@
 calc_n_sds <- function(dist = NULL, sample_size) {
    purrr::map_df(
       .x = sample_size, 
-      .f = ~ return(data.frame(n = .x, sd = sd(sample(dist, .x, T))))
+      .f = ~ return(data.frame(n = .x, 
+                               sd = sd(sample(dist, .x, T)),
+                               se = sd(sample(dist, .x, T)) / sqrt(.x))
+                    )
    )
 }
 
