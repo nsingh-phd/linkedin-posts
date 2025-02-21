@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy.stats as stats
 import imageio.v2 as imageio
+import os
 
 # Set up values for the x-axis (range of values for the distributions)
 x = np.linspace(-4, 4, 1000)
@@ -27,7 +28,7 @@ for df in range(1, 31):
     plt.ylim(0, 0.45)
     plt.legend()
     
-    # Save the current plot as a frame
+    # Save the current plot as a frame in temp .png file
     plt.savefig('plots/240923_t-dist_to_std_normal.png')
     frames.append(imageio.imread('plots/240923_t-dist_to_std_normal.png'))
     plt.close()
@@ -36,4 +37,5 @@ for df in range(1, 31):
 gif_path = 'plots/240923_t-dist_to_std_normal.gif'
 imageio.mimsave(gif_path, frames, fps=5, loop=0)
 
-
+# delete temp .png file
+os.remove('plots/240923_t-dist_to_std_normal.png')
