@@ -27,6 +27,8 @@ hist(n_dist,
 title(ylab = "Density", cex.lab = 1.75, line = 2.25)
 
 # plot std. dev. estimation vs. sample size
+png(filename = "plots/250206_SD_sampleSize.png",
+    width = 866, height = 570)
 plot(n_sds$n, n_sds$sd, 
      ylim = c(0, max(n_sds$sd)),
      col = "blue",
@@ -48,3 +50,4 @@ legend(x = 4000, y = 0.4,
        pch = c(1, NA),
        lty = c(1, 2),
        cex = 1.25)
+dev.off()
