@@ -5,7 +5,7 @@ script_folder = "."
 image_folder = "plots"
 
 # Get all scripts
-scripts = [f for f in os.listdir(script_folder) if f.endswith(".py")]
+scripts = [f for f in os.listdir(script_folder) if f.endswith((".py", ".R"))]
 
 # Get all images
 images = [f for f in os.listdir(image_folder) if f.endswith((".png", ".jpg", ".jpeg", ".gif"))]
