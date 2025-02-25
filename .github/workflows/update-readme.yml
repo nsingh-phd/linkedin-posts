@@ -4,7 +4,8 @@ on:
   push:
     paths:
       - "plots/**"  # Trigger when images are added or updated
-      - "*.py"     # Trigger when Python scripts are added or updated
+      - "*.py"      # Trigger when Python scripts are added or updated
+      - "*.R"       # Trigger when R scripts are added or updated
 
 jobs:
   update-readme:
