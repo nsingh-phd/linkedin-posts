@@ -26,7 +26,21 @@ jobs:
       - name: Run Python script to update README
         run: python README-creater.py
 
+      # Check for changes
+      - name: Check for changes
+        id: check-changes
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes detected."
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes detected."
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      # Only run if found changes
       - name: Commit and push changes
+        if: steps.check-changes.outputs.has_changes == 'true'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
