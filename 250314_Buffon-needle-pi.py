@@ -43,7 +43,7 @@ def buffon_needle_simulation(n, l=1, d=2, visualize=True, ax=None):
     
     return pi_est
 
-def run_tests(l=1, d=2, max_n=25000, step=100):
+def run_tests(l=1, d=2, max_n=25000, step=250):
     """
     Run simulations and display results with an animated convergence plot in a grid,
     saving the entire figure as a GIF.
@@ -59,7 +59,7 @@ def run_tests(l=1, d=2, max_n=25000, step=100):
     gs = gridspec.GridSpec(2, 2, height_ratios=[1, 1])
     
     # First row: Two needle simulations (static)
-    test_ns = [100, 1000]
+    test_ns = [50, 1000]
     axs = [plt.subplot(gs[0, 0]), plt.subplot(gs[0, 1])]
     
     for idx, n in enumerate(test_ns):
