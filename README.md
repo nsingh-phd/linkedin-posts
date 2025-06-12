@@ -4,6 +4,7 @@ This table shows the scripts (sorted by date) and their corresponding plots:
 
 | Script | Plot |
 |--------|------|
+| [250612_CI-convergence.py](250612_CI-convergence.py) | ![250612_CI-convergence.gif](plots/250612_CI-convergence.gif) |
 | [250324_feelings-after-layoff.py](250324_feelings-after-layoff.py) | ![250324_feelings-after-layoff.png](plots/250324_feelings-after-layoff.png) |
 | [250314_Buffon-needle-pi.py](250314_Buffon-needle-pi.py) | ![250314_Buffon-needle-pi.gif](plots/250314_Buffon-needle-pi.gif) |
 | [250221_sampleSize_pvalue.py](250221_sampleSize_pvalue.py) | ![250221_sampleSize_pvalue.gif](plots/250221_sampleSize_pvalue.gif) |
