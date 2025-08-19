@@ -1,0 +1,26 @@
+[project]
+name = "linkedin-posts"
+version = "0.1.0"
+description = "this repo is used for creating viz and sims for linkedin"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "html5lib>=1.1",
+    "jupyter>=1.1.1",
+    "lxml>=6.0.0",
+    "matplotlib>=3.10.3",
+    "numba>=0.61.2",
+    "numpy>=2.2.6",
+    "openpyxl>=3.1.5",
+    "pandas>=2.3.1",
+    "patsy>=1.0.1",
+    "pyarrow>=20.0.0",
+    "requests>=2.32.4",
+    "scikit-learn>=1.7.0",
+    "scipy>=1.16.0",
+    "seaborn>=0.13.2",
+    "sqlalchemy>=2.0.41",
+    "statsmodels>=0.14.5",
+    "tables>=3.10.2",
+]
