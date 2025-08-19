@@ -162,4 +162,4 @@ if __name__ == "__main__":
     sample_sizes = np.arange(50, 10000, 100)
     sd_vs_se.generate_n_random_samples(sample_sizes)
     sd_vs_se.calc_stats()
-    sd_vs_se.plot_sd_vs_se(output_path='plots/250819_SD_vs_SE.gif')
+    sd_vs_se.plot_sd_vs_se(output_path='plots/250819_SD-and-SE_vs_N.gif')
