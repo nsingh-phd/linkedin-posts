@@ -1,5 +1,5 @@
 """
-Standard Deviation vs Standard Error Visualization
+Standard Deviation vs Standard Error Visualization as sample size increases
 
 This module demonstrates the relationship between standard deviation (SD) and 
 standard error (SE) as sample size increases. It generates an animated plot 
