@@ -37,7 +37,6 @@ jobs:
 
       # Only run if found changes
       - name: Commit and push changes
-        if: steps.check-changes.outputs.has_changes == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
