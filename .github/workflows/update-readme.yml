@@ -38,26 +38,18 @@ jobs:
       - name: Run Python script to update README
         run: python README-creater.py
 
-      # Check for changes
-      - name: Check for changes
-        id: check-changes
-        run: |
-          if [ -z "$(git status --porcelain)" ]; then
-            echo "No changes detected."
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-          else
-            echo "Changes detected."
-            echo "has_changes=true" >> $GITHUB_OUTPUT
-          fi
-
       # Only run if found changes
       - name: Commit and push changes
         if: steps.check-changes.outputs.has_changes == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add README.md
-          git commit -m "Update README with new images and scripts [skip ci]"
-          git push
+          if [[ $(git status --porcelain) ]]; then
+            git config --local user.name "github-actions[bot]"
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "Update README with new scripts and images"
+            git push
+          else
+            echo "No changes to commit. Skipping commit and push."
+          fi
