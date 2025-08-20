@@ -2,15 +2,12 @@ name: Update README with images and scripts.
 
 on:
   push:
-    branches: [ main ]  # Only run on main branch
-    paths:
-      - "plots/**"  # Trigger when images are added or updated
-      - "*.py"      # Trigger when Python scripts are added or updated
-      - "*.R"       # Trigger when R scripts are added or updated
+    branches:
+      - main          # Only run on main branch
   workflow_dispatch:  # Allow manual triggering
 
 permissions:
-  contents: write  # Needed to push changes back to the repository
+  contents: write     # Needed to push changes back to the repository
 
 # Prevent multiple workflow runs from interfering with each other
 concurrency:
@@ -50,6 +47,9 @@ jobs:
             git add README.md
             git commit -m "Update README with new scripts and images"
             git push
+          else
+            echo "No changes to commit. Skipping commit and push."
+          fi
           else
             echo "No changes to commit. Skipping commit and push."
           fi
