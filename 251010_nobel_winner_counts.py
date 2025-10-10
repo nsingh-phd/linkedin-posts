@@ -56,7 +56,7 @@ class NobelData:
             + scale_y_continuous(breaks=[0, 1, 2, 3], limits=(0, 3))
         )
         plt.save(
-            'plots/251010_nobel_laureate_counts_per_decade_by_category.png',
+            'plots/251010_nobel_winner_counts.png',
             dpi=300,
             width=10,
             height=6,
