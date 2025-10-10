@@ -4,6 +4,7 @@ This table shows the scripts (sorted by date) and their corresponding plots:
 
 | Script | Plot |
 |--------|------|
+| [251010_nobel_winner_counts.py](251010_nobel_winner_counts.py) | ![251010_nobel_winner_counts.png](plots/251010_nobel_winner_counts.png) |
 | [250819_SD-and-SE_vs_N.py](250819_SD-and-SE_vs_N.py) | ![250819_SD-and-SE_vs_N.gif](plots/250819_SD-and-SE_vs_N.gif) |
 | [250612_CI-convergence.py](250612_CI-convergence.py) | ![250612_CI-convergence.gif](plots/250612_CI-convergence.gif) |
 | [250324_feelings-after-layoff.py](250324_feelings-after-layoff.py) | ![250324_feelings-after-layoff.png](plots/250324_feelings-after-layoff.png) |
