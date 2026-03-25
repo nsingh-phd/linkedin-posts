@@ -4,7 +4,7 @@ This table shows the scripts (sorted by date) and their corresponding plots:
 
 | Script | Plot |
 |--------|------|
-| [260325_speeding-time-saved.py](260325_speeding-time-saved.py) | ![260325_speeding-time-saved_60mph.png](plots/260325_speeding-time-saved.png) |
+| [260325_speeding-time-saved.py](260325_speeding-time-saved.py) | ![260325_speeding-time-saved.png](plots/260325_speeding-time-saved.png) |
 | [251010_nobel_winner_counts.py](251010_nobel_winner_counts.py) | ![251010_nobel_winner_counts.png](plots/251010_nobel_winner_counts.png) |
 | [250819_SD-and-SE_vs_N.py](250819_SD-and-SE_vs_N.py) | ![250819_SD-and-SE_vs_N.gif](plots/250819_SD-and-SE_vs_N.gif) |
 | [250612_CI-convergence.py](250612_CI-convergence.py) | ![250612_CI-convergence.gif](plots/250612_CI-convergence.gif) |
