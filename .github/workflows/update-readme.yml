@@ -1,6 +1,9 @@
 name: Update README with images and scripts.
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:  # Allow manual triggering only
 
 permissions:
